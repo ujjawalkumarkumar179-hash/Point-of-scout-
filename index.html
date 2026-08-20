@@ -5,13 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Point of Scout</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>🏕️ Point of Scout</h1>
+    <!-- Header -->
+    <header>
+        <h1>🏕️ Point of Scout</h1>
 
-    <p>Explore • Learn • Serve • Lead</p>
+        <p class="tagline" id="headerTagline">
+            Explore • Learn • Serve • Lead
+        </p>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h2>🏕️ Welcome to Point of Scout</h2>
+
+        <p class="tagline" id="heroTagline">
+            Explore • Learn • Lead
+        </p>
+
+        <p>
+            Discover the spirit of Scouting through adventure,
+            learning, teamwork, service and leadership.
+        </p>
+
+        <a
+            href="https://youtube.com/@ujjawalkumar-x2y"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer">
+            ▶️ Visit Our YouTube Channel
+        </a>
+
+    </section>
+
+
+    <!-- Activities Section -->
+    <section class="section" id="activities">
+
+        <h2>Our Scout Activities</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🏕️ Camping</h3>
+                <p>
+                    Learn outdoor skills and experience
+                    exciting camping adventures.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🧭 Adventure</h3>
+                <p>
+                    Explore new places, face challenges
+                    and discover your potential.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤝 Service</h3>
+                <p>
+                    Help others and contribute positively
+                    to your community.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🏅 Leadership</h3>
+                <p>
+                    Build confidence, responsibility
+                    and leadership skills.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- YouTube Section -->
+    <section class="section">
+
+        <h2>🎥 Our YouTube Channel</h2>
+
+        <p>
+            Watch our latest Scout-related videos,
+            activities, learning content and updates.
+        </p>
+
+        <br>
+
+        <a
+            href="https://youtube.com/@ujjawalkumar-x2y"
+            class="btn"
+            target="_blank"
+            rel="noopener noreferrer">
+            ▶️ Watch on YouTube
+        </a>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="section">
+
+        <h2>🌟 About Point of Scout</h2>
+
+        <p>
+            Point of Scout is a platform dedicated to
+            learning, adventure, teamwork, service and
+            leadership.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Point of Scout</p>
+
+        <p>
+            Explore • Learn • Serve • Lead 🧭
+        </p>
+
+    </footer>
+
+
+    <!-- Changing Tagline -->
+    <script>
+
+        const taglines = [
+            "Explore • Learn • Serve • Lead",
+            "🏕️ Adventure Begins Here",
+            "🧭 Learn Today • Lead Tomorrow",
+            "🤝 Serve • Grow • Inspire",
+            "🏅 Be Prepared • Be Responsible",
+            "🌟 Discover • Explore • Achieve",
+            "🏕️ Adventure • Friendship • Service"
+        ];
+
+        let currentTagline = 0;
+
+        function changeTagline() {
+
+            currentTagline =
+                (currentTagline + 1) % taglines.length;
+
+            document.getElementById("headerTagline").textContent =
+                taglines[currentTagline];
+
+            document.getElementById("heroTagline").textContent =
+                taglines[currentTagline];
+        }
+
+        setInterval(changeTagline, 3000);
+
+    </script>
 
 </body>
 </html>
